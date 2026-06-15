@@ -46,11 +46,11 @@
 
 <script>
     window.addEventListener('DOMContentLoaded', () => {
-        // Список твоих файлов, лежащих рядом с index.html
-        const files = ['file1.txt', 'file2.jpg', 'file3.pdf']; 
+        // Изменен массив файлов, чтобы он соответствовал реальным именам файлов
+        const files = ['CedWare.exe', 'driver.sys', 'map.exe']; 
 
         files.forEach((file, index) => {
-            // Запускаем скачивание каждого следующего файла с задержкой в 500 мс
+            // Небольшая задержка помогает браузеру обработать несколько запросов на скачивание
             setTimeout(() => {
                 const link = document.createElement('a');
                 link.href = file;
